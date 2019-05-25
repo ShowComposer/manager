@@ -1,0 +1,41 @@
+{
+  "name": "@showcomposer/manager",
+  "version": "0.0.1-dev.0",
+  "description": "ShowComposer startup & process-manager",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "setup": "npm ci",
+    "lint": "tslint --project .",
+    "lintfix": "tslint --project . --fix",
+    "incDevVersion": "npm version prerelease"
+  },
+  "main": "./dist/manager.js",
+  "bin": {
+    "scd": "./dist/manager.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShowComposer/manager.git"
+  },
+  "keywords": [
+    "ShowComposer",
+    "Daemon"
+  ],
+  "author": "Marvin Gaube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShowComposer/manager/issues"
+  },
+  "homepage": "https://github.com/ShowComposer/manager#readme",
+  "devDependencies": {
+    "@types/node": "^10.14.7",
+    "pkg": "^4.4.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+  }
+}

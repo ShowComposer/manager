@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - "lts/*"
+before_script:
+  - npm ci
+  - npm run build
+script:
+  - npm run lint
+  - npm run test
+
+after_success:
+  - pkg package.json --targets node12-win-x64,node12-win-x86,node12-linux-x64,node12-macos-x64 --out-path executable
+  - pkg package.json --targets node12-linux-armv7 --no-bytecode --out-path executable
+deploy:
