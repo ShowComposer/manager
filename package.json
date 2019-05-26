@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@hibas123/nodelogging": "^2.0.6",
-    "@showcomposer/broker": "0.0.1-dev.5",
+    "@showcomposer/broker": "0.0.1-dev.6",
     "@showcomposer/core-io": "0.0.1-dev.1"
   }
 }
