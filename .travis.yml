@@ -13,10 +13,16 @@ after_success:
 - pkg package.json --targets node12-linux-armv7 --no-bytecode --out-path executable
 
 deploy:
-  provider: npm
-  email: "$NPM_MAIL"
-  api_key: "$NPM_TOKEN"
-  skip_cleanup: true
-  on:
-    tags: true
-    repo: ShowComposer/manager
+  - provider: npm
+    email: "$NPM_MAIL"
+    api_key: "$NPM_TOKEN"
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: ShowComposer/manager
+  - provider: releases
+    api_key: "$GITHUB_TOKEN"
+    file: "executable/*"
+    skip_cleanup: true
+    on:
+      tags: true
