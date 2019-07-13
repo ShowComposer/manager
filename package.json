@@ -31,13 +31,13 @@
   },
   "homepage": "https://github.com/ShowComposer/manager#readme",
   "devDependencies": {
-    "@types/node": "^10.14.7",
+    "@types/node": "^10.14.12",
     "pkg": "^4.4.0",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.5"
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@hibas123/nodelogging": "^2.0.6",
+    "@hibas123/nodelogging": "^2.1.0",
     "@showcomposer/broker": "0.0.1-dev.10",
     "@showcomposer/core-io": "0.0.1-dev.2"
   }
